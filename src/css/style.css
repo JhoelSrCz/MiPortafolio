@@ -1,0 +1,64 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    font-size: 24px;
+}
+header{
+    background: rgba(0, 0, 0, 0.5);
+    background-position: center;
+    background-attachment: top;
+    background-size: contain;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+}
+nav {
+    float: left;
+}
+  
+nav ul {
+    list-style: none;
+    overflow: hidden; 
+}
+  
+nav ul li {
+    float: left;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+}
+nav ul li a {
+    display: block;
+    padding: 10px;
+    color: #fff;
+    text-decoration: none;
+}
+nav ul li:hover {
+    background: black;
+    border-radius: 30px;
+}
+body{
+    background-image: url('iconPORTA.jpeg');
+    height: 740px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.relleno__1{
+    color: white;
+    padding: 10px;
+    border: ridge;
+    border-radius: 35px;
+    padding: 3px 20px;
+    font-size: 30px;
+    margin: 5px 5px;
+}
+.relleno__2{
+    color: white;
+    padding: 10px;
+    border: ridge;
+    border-radius: 35px;
+    padding: 3px 20px;
+    font-size: 30px;
+}
