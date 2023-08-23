@@ -3,20 +3,62 @@
 }
 body{
     margin: 0;
-    background-color: #efefef;
 }
 header{
-    background-color: #868686;
-    color: white;
-    padding: 5px;
+    background: rgba(0,0,0,0.5);
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
 }
-#titulo{
-    font-size: 30px;
+nav{
+    float: left;
+}
+nav ul{
+    list-style: none;
+    overflow: hidden;
+}
+nav ul li{
+    float: left;
+    font-size: 16px;
+}
+.menu__texto{
+    display: block;
+    padding: 10px;
+    color: #fff;
+    text-decoration: none;
+}
+.menu__redes{
+    display: block;
+    padding: 10px;
+}
+.menu__texto:hover{
+    background: black;
+}
+.fondo{
     text-align: center;
 }
-section{
-    background-image: url('iconPORTA.jpeg');
-    background-position: center;
-    background-size: contain;
-    background-repeat: no-repeat;
+.relleno-1{
+    color: white;
+    position: absolute;
+    top: 45%;
+    left: 65%;
+    font-size: 30px;
+    padding: 5px;
+}
+.relleno-2{
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 30px;
+    padding: 5px;
+}
+.relleno-1:hover{
+    background-color: black;
+    border-radius: 40px;
+}
+.relleno-2:hover{
+    background-color: black;
+    border-radius: 40px;
 }
