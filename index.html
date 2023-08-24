@@ -4,50 +4,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mi Portafolio</title>
+    <link rel="stylesheet" href="src/css/style.css"/>
 </head>
 <body>
     <header>
-        <nav>
+        <nav class="menu">
+            <img class="menu__img" src="src/img/iconJsc__2_-removebg-preview.png" height="100"/>
             <ul>
-                <img src="src/img/iconJSC.jpeg" height="100"/>
-                <h2 id="titulo">INICIO</h2>
                 <li>
-                    <a href="sobremi.html">SOBRE MI</a>
+                    <h2 class="menu__texto">INICIO</h2>
                 </li>
                 <li>
-                    <a href="blog.html">BLOG</a>
+                    <a class="menu__texto" href="sobremi.html">SOBRE MI</a>
                 </li>
                 <li>
-                    <a href="contacto.html">CONTACTO</a>
+                    <a class="menu__texto" href="blog.html">BLOG</a>
                 </li>
                 <li>
-                    <a href="https://www.instagram.com/jhoelserrudo_14/" target="_blank">
-                        <img src="src/img/icoonInsta.jpeg" width="50"/>
-                    </a>
-                </li>
-                <li>
-                    <a href="https://wa.me/59172973781" target="_blank">
-                    <img src="src/img/iconWhatsapp.jpeg" width="35"/>
-                    </a>
-                </li>
-                <li>
-                    <a href="https://github.com/JhoelSrCz" target="_blank">
-                    <img src="src/img/iconGithub.jpeg" width="35"/>
-                    </a>
+                    <a class="menu__texto" href="contacto.html">CONTACTO</a>
                 </li>
             </ul>
         </nav>
     </header>
-    <section>
-        <img src="src/img/iconPORTA.jpeg" height="700"/>
+    <section class="fondo">
+        <img class="fondo__img" src="src/img/iconPORTA.jpeg" height="690" width="1520"/>
         <article>
-            <h4>HOLA</h4>
-            <h5>Soy estudiante de Ing. de Sistemas</h5>
+            <h4 class="relleno-1">HOLA</h4>
+            <h5 class="relleno-2">Soy estudiante de Ing. de Sistemas</h5>
         </article>
     </section>
-    <hr>
     <footer>
-        <h4>"No se trata de donde vienes, sino de donde vas"</h4>
+        <p class="msj">"No se trata de donde vienes, sino de donde vas"</p>
     </footer>
 </body>
 </html>
