@@ -1,64 +1,162 @@
 *{
-    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: Arial, Helvetica, sans-serif;
 }
 body{
-    margin: 0;
+    background-color: #f5f5f5;
 }
 header{
-    background: rgba(0,0,0,0.5);
-    width: 100%;
-    position: fixed;
-    top: 0;
-    left: 0;
+    background: rgba(0,0,0,1);
+    background-position: center bottom;
+    background-size: cover;
+    display: flex;
+    padding: 20px;
 }
 nav{
     float: left;
 }
 nav ul{
-    list-style: none;
-    overflow: hidden;
+    position: relative;
+    height: 70px;
+    left: 810px;
 }
 nav ul li{
-    float: left;
-    font-size: 16px;
+    display: inline-block;
+    margin-left: 5px;
+    width: 90px;
+    height: 40px;
+    padding-top: 25px;
+    font-weight: bold;
+    list-style: none;
+    text-align: center;
+}
+.menu__img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 0;
 }
 .menu__texto{
-    display: block;
-    padding: 10px;
-    color: #fff;
+    color: white;
+    font-size: 15px;
     text-decoration: none;
-}
-.menu__redes{
-    display: block;
-    padding: 10px;
+    transition: 0.5s;
 }
 .menu__texto:hover{
-    background: black;
+    background-color: #a581ff5b;
+    color: deepskyblue;
+    text-decoration: underline white;
 }
 .fondo{
     text-align: center;
 }
 .relleno-1{
-    color: white;
+    color: rgb(236, 231, 231);
     position: absolute;
     top: 45%;
-    left: 65%;
+    left: 66%;
     font-size: 30px;
     padding: 5px;
+    border-radius: 50px;
+    animation-name: colores;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+
 }
 .relleno-2{
-    color: white;
+    color: rgb(236, 231, 231);
     position: absolute;
     top: 50%;
     left: 50%;
     font-size: 30px;
     padding: 5px;
+    border-radius: 50px;
+    animation-name: colores;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
 }
-.relleno-1:hover{
-    background-color: black;
-    border-radius: 40px;
+footer{
+    background-color: #222;
+    padding: 10px;
+    color: #fff;
+    text-align: center;
 }
-.relleno-2:hover{
-    background-color: black;
-    border-radius: 40px;
+.astro{
+    background-image: url("https://img.freepik.com/foto-gratis/fondo-banner-trazo-pincel-rojo-negro-perfecto-canva_1361-3597.jpg?w=1060&t=st=1692823604~exp=1692824204~hmac=009fe86a2ffa316e0483ad723fce133be63bfad9a39c17a82df7f5bcadcd0e76");
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+}
+.smtitulo{
+    color: #f5f5f5;
+    font-size: 50px;
+    text-decoration: underline;
+}
+.smtexto{
+    color: #f5f5f5;
+    font-size: 37px;
+}
+.fondo-blog{
+    background-image: url("https://img.freepik.com/foto-gratis/fondo-geometrico-azul-oscuro-espacio-copia_24972-1815.jpg?size=626&ext=jpg&ga=GA1.1.1405623069.1692820396&semt=ais");
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+}
+.bsubtitulo{
+    color: #f5f5f5;
+    padding: 10px;
+    font-size: 25px;
+    text-decoration: underline;
+}
+.btexto{
+    color: #f5f5f5;
+    padding: 10px;
+    font-size: 20px;
+}
+.fondo-contacto{
+    background-image: url("https://img.freepik.com/fotos-premium/mano-empresario-sosteniendo-presionando-sobre-icono-telefono-correo-telefono-mensaje-correo-persona-usuario-centro-llamadas-servicio-al-cliente-contactenos-concepto-banner-espacio-copia-metodos-contacto_150455-11622.jpg?size=626&ext=jpg&ga=GA1.2.1405623069.1692820396&semt=ais");
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+}
+.ctotexto{
+    font-size: 30px;
+    color: #fff;
+}
+.btn-1, .btn-2{
+    font-size: 20px;
+    color: #fff;
+    background-color: transparent;
+}
+.btn-1:hover{
+    background-color: #222;
+}
+.btn-2:hover{
+    background-color: #222;
+}
+.ctotexto-innom{
+    font-size: 20px;
+}
+.ctotexto-incor{
+    font-size: 20px;
+}
+.ctotexto-inmen{
+    font-size: 20px;
+}
+@keyframes colores{
+    0%{
+        background: dimgray;
+    }
+    100%{
+        background: black;
+    }
 }
