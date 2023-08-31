@@ -6,56 +6,23 @@
     list-style: none;
     font-family: Arial, Helvetica, sans-serif;
 }
-body{
-    background-color: #f5f5f5;
+:root{
+    --text-color-relleno: rgb(236, 231, 231);
+    --text-color-titulo: #f5f5f5;
+    --text-color-texto: #faf8f8;
 }
-header{
-    background: rgba(0,0,0,1);
-    background-position: center bottom;
+#porta{
+    background-image: url(../img/iconPORTA.jpeg);
     background-size: cover;
-    display: flex;
-    padding: 20px;
-}
-nav{
-    float: left;
-}
-nav ul{
-    position: relative;
-    height: 70px;
-    left: 810px;
-}
-nav ul li{
-    display: inline-block;
-    margin-left: 5px;
-    width: 90px;
-    height: 40px;
-    padding-top: 25px;
-    font-weight: bold;
-    list-style: none;
-    text-align: center;
-}
-.menu__img{
-    position: absolute;
-    top: 0;
-    left: 0;
-    margin: 0;
-}
-.menu__texto{
-    color: white;
-    font-size: 15px;
-    text-decoration: none;
-    transition: 0.5s;
-}
-.menu__texto:hover{
-    background-color: #a581ff5b;
-    color: deepskyblue;
-    text-decoration: underline white;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    animation: transicion 1s;
 }
 .fondo{
     text-align: center;
 }
 .relleno-1{
-    color: rgb(236, 231, 231);
+    color: var(--text-color-relleno);
     position: absolute;
     top: 45%;
     left: 66%;
@@ -69,7 +36,7 @@ nav ul li{
 
 }
 .relleno-2{
-    color: rgb(236, 231, 231);
+    color: var(--text-color-relleno);
     position: absolute;
     top: 50%;
     left: 50%;
@@ -81,12 +48,6 @@ nav ul li{
     animation-timing-function: linear;
     animation-iteration-count: infinite;
 }
-footer{
-    background-color: #222;
-    padding: 10px;
-    color: #fff;
-    text-align: center;
-}
 .astro{
     background-image: url("https://img.freepik.com/foto-gratis/fondo-banner-trazo-pincel-rojo-negro-perfecto-canva_1361-3597.jpg?w=1060&t=st=1692823604~exp=1692824204~hmac=009fe86a2ffa316e0483ad723fce133be63bfad9a39c17a82df7f5bcadcd0e76");
     background-position: center bottom;
@@ -95,62 +56,43 @@ footer{
     display: flex;
 }
 .smtitulo{
-    color: #f5f5f5;
+    color: var(--text-color-titulo);
     font-size: 50px;
     text-decoration: underline;
 }
 .smtexto{
-    color: #f5f5f5;
+    color: var(--text-color-texto);
     font-size: 37px;
 }
 .fondo-blog{
-    background-image: url("https://img.freepik.com/foto-gratis/fondo-geometrico-azul-oscuro-espacio-copia_24972-1815.jpg?size=626&ext=jpg&ga=GA1.1.1405623069.1692820396&semt=ais");
+    background: #0F2027;
+    background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);
+    background: linear-gradient(to right, #2C5364, #203A43, #0F2027);
+    padding: 0px 15px 50px 15px;
     background-position: center bottom;
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
 }
 .bsubtitulo{
-    color: #f5f5f5;
+    color: var(--text-color-titulo);
     padding: 10px;
     font-size: 25px;
     text-decoration: underline;
 }
 .btexto{
-    color: #f5f5f5;
+    color: var(--text-color-texto);
     padding: 10px;
     font-size: 20px;
 }
-.fondo-contacto{
-    background-image: url("https://img.freepik.com/fotos-premium/mano-empresario-sosteniendo-presionando-sobre-icono-telefono-correo-telefono-mensaje-correo-persona-usuario-centro-llamadas-servicio-al-cliente-contactenos-concepto-banner-espacio-copia-metodos-contacto_150455-11622.jpg?size=626&ext=jpg&ga=GA1.2.1405623069.1692820396&semt=ais");
-    background-position: center bottom;
-    background-repeat: no-repeat;
-    background-size: cover;
-    display: flex;
-}
-.ctotexto{
-    font-size: 30px;
-    color: #fff;
-}
-.btn-1, .btn-2{
-    font-size: 20px;
-    color: #fff;
-    background-color: transparent;
-}
-.btn-1:hover{
+footer{
     background-color: #222;
-}
-.btn-2:hover{
-    background-color: #222;
-}
-.ctotexto-innom{
-    font-size: 20px;
-}
-.ctotexto-incor{
-    font-size: 20px;
-}
-.ctotexto-inmen{
-    font-size: 20px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 40px;
+    color: white;
+    text-align: center;
 }
 @keyframes colores{
     0%{
@@ -158,5 +100,15 @@ footer{
     }
     100%{
         background: black;
+    }
+}
+@keyframes transicion{
+    from{
+        opacity: 0;
+        transform: rotateY(-10deg);
+    }
+    to{
+        opacity: 1;
+        transform: rotateY(0);
     }
 }
